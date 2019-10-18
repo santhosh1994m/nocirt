@@ -14,7 +14,7 @@ jobs:
       uses: hashicorp/terraform-github-actions/init@v0.4.5	
     - name: Terraform validate	
       uses: hashicorp/terraform-github-actions/validate@v0.4.5	
-    - name: Terraform plan 
+    - name: Terraform plan -out = tfplan.tf
       uses: hashicorp/terraform-github-actions/plan@v0.4.5 	
     - name: Terraform apply 	
       uses: hashicorp/terraform-github-actions/apply@v0.4.5 
