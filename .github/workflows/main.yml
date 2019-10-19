@@ -22,12 +22,14 @@ jobs:
        TF_ACTION_WORKING_DIR: "./src"  
        PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
        APPLICATION_CREDENTIALS: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}} 
+       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Terraform validate	
       uses: hashicorp/terraform-github-actions/validate@v0.4.5	
       env:
         TF_ACTION_WORKING_DIR: "./src"
         PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
         APPLICATION_CREDENTIALS: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}} 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Terraform plan 
       uses: hashicorp/terraform-github-actions/plan@v0.4.5 
       env:
@@ -35,11 +37,12 @@ jobs:
        PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
        APPLICATION_CREDENTIALS: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}} 
        TF_WORKSPACE: default
+       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Terraform apply 	
       uses: hashicorp/terraform-github-actions/apply@v0.4.5 
       env:
        TF_ACTION_WORKING_DIR: "./src"	
        PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
        APPLICATION_CREDENTIALS: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}} 
-       TF_WORKSPACE: default 
-      
+       TF_WORKSPACE: default
+       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
