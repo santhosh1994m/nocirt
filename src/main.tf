@@ -1,5 +1,5 @@
 provider "google" {
-    credentials = "./logical-voyage-252303-6ab62b7de59c.json"
+    credentials = "logical-voyage-252303-6ab62b7de59c.json"
     project     = "logical-voyage-252303"
     region      = "us-west1"
 }
