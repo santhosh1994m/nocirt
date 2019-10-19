@@ -1,4 +1,4 @@
-name: gcloud
+name: CI
 
 on:
   push:
