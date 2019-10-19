@@ -34,10 +34,12 @@ jobs:
        TF_ACTION_WORKING_DIR: "./src"	
        PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
        APPLICATION_CREDENTIALS: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}} 
+       TF_WORKSPACE: default
     - name: Terraform apply 	
       uses: hashicorp/terraform-github-actions/apply@v0.4.5 
       env:
        TF_ACTION_WORKING_DIR: "./src"	
        PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
        APPLICATION_CREDENTIALS: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}} 
+       TF_WORKSPACE: default 
       
