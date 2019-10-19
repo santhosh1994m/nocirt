@@ -1,6 +1,6 @@
 provider "google" {
-    credentials = "${{GOOGLE_APPLICATION_CREDENTIALS}}"
-    project     = "${{GCLOUD_PROJECT_ID}}"
+    credentials = "./logical-voyage-252303-6ab62b7de59c.json"
+    project     = "logical-voyage-252303"
     region      = "us-west1"
 }
 

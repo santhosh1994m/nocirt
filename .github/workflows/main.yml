@@ -1,26 +1,33 @@
-name: CI	
+name: CI
 
-on: 	
-  push:	
-    branches:	
+on:
+  push:
+    branches:
       - master
 
-jobs:	
-  tf_fmt:	
-    name: Validate Validate	
+jobs:
+  tf_fmt:
+    name: Validate	
     runs-on: ubuntu-latest	
-    steps:	
+    steps:
+    - uses: actions/checkout@v1
+    - name :  terraform version
+      run: |
+         curl -f "https://releases.hashicorp.com/terraform/0.12.12/terraform_0.12.12_linux_amd64.zip" -o "terraform_0.12.12_linux_amd64.zip"	
+         echo "y"|sudo unzip terraform_0.12.12_linux_amd64.zip -d /usr/local/bin/
+         sudo chmod +x  /usr/local/bin/terraform	
+         terraform -version
     - name: Terraform init	
       uses: hashicorp/terraform-github-actions/init@v0.4.5	
       env:
-       TF_ACTION_WORKING_DIR: "./*"
+       TF_ACTION_WORKING_DIR: "./src"
     - name: Terraform validate	
       uses: hashicorp/terraform-github-actions/validate@v0.4.5	
       env:
-       TF_ACTION_WORKING_DIR: "./*"
+       TF_ACTION_WORKING_DIR: "./src"
     - name: Terraform plan 
       uses: hashicorp/terraform-github-actions/plan@v0.4.5 
       env:
-       TF_ACTION_WORKING_DIR: "./*"	
+       TF_ACTION_WORKING_DIR: "./src"	
     - name: Terraform apply 	
       uses: hashicorp/terraform-github-actions/apply@v0.4.5 

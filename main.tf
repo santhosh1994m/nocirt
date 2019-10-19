@@ -1,7 +1,9 @@
 provider "google" {
-    credentials = "${{GOOGLE_APPLICATION_CREDENTIALS}}"
+    
     project     = "${{GCLOUD_PROJECT_ID}}"
     region      = "us-west1"
+    version = "~> 3.0.0"
+    
 }
 
 resource "google_storage_bucket" "image-store" {
