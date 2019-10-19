@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest	
     steps:
     - uses: actions/checkout@v1
-    - uses: exelban/gcloud@master
     - name :  terraform version
       run: |
          curl -f "https://releases.hashicorp.com/terraform/0.12.12/terraform_0.12.12_linux_amd64.zip" -o "terraform_0.12.12_linux_amd64.zip"	
