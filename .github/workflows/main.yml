@@ -7,7 +7,7 @@ on:
 
 jobs:	
   tf_fmt:	
-    name: Validate Validate	
+    name: Validate	
     runs-on: ubuntu-latest	
     steps:	
     - name: Terraform init	
