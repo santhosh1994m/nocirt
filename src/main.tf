@@ -3,6 +3,6 @@ provider "google" {
   
    }
 resource "google_storage_bucket" "image-store" {
-  name     = "image-store-bucket-santhosh12"
+  name     = "image-store-bucket-santhosh123"
   location = "EU"
    }
