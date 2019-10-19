@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "logical-voyage-252303",
+  "private_key_id": "6ab62b7de59c15a43223126eaaa376b627a7c29c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCYFb4Fpn1r3P8j\nWOOE++78ljJLaIsHd0kXoDBK1TD5LEIXfDr8ITxcAvw6mKWA32hpgVy+qO0/ko7n\nGuFavTJuw3SWiPqbo+i61EwidUf+6wbPQjMdkyWvFZgvAGVJUgHlba/yhPPalm/u\nxJEu5D0lky2CInEbJDHnC3gnLMpoNWvijMKZfE2abwUUb5QmCQza5bxLykrR6naT\n7d3HzPZPjAEw7bUL917Pe1etq7Fpopr70qokIzOx0YJrk08xvcHaKv4UlH6W1Vqw\ntRupAYrIg0ZINN+JvCoqpmCmf1P5k9V8qJAce5YyOytmczXbcMXFzAmJ2h1mqjQ7\nt8u0TId7AgMBAAECggEABV8lckZPsxgqn7Tgz+5r2tqBBArVlIDtiFA0djygyzGV\n/j6V1lFHiX8buAPkc7ebBpxMGKTCJHcFEAKctfRRAZb5EjpN57fasp+FNqyVIL5s\nKwobbvk0/aVcnQfvUwSlR2OR2+tbzns9kKTXn+smuqIG8OiGvYXlpOHR0yv0Yqy2\n3kjyaLZtL8wW6hY/0rhmOnib282Qusr/DQ2WCGUYgIgZtfxMtmqv8JtuytC1FRXs\nddcFusiTf55pUnHOMKrIyY8JpAcGdRNRE80xnl8lhUG/ZglQPL5oj3UDMXcB6qG0\nfEwK8K3jHvHsENzMcIJCZAJ/XbDhrXKuxE2kZ+JDkQKBgQDKf2nw3VwHA76KU96C\nSFi8GOZuhV16sYjFkLvlTuw5+73M5udmVe3+vzfY+mpQvqR2prJzjJb7DkSiExrK\n/6Z6sLuIOCFGx0cNXRYHWC+AvOHfT35PhuBfdaX+WCY02cN/bSpkQtBqSzpQKgda\ngLLoZILu19WVVbcp14WiJYxf4wKBgQDARH9Vhs0bqnFcwwS8eokGAr/fXofWV3A+\n4vRJYTietHJr5WIVo6JDLaPwCy8Be1zvI3Pk8jNoZ/Zm0ae4CVV0hDpHk5sQbaGz\nVIZ7J47fIJbMe8+WgVsG6/obRtFeWZ9a0NnEDtvXspbk4anUZvcA8vyeK6ff5xSc\n3kVTxVWdiQKBgAInUsAeCpGEh60+8RnfnRn7BdBdGL5qTvMS8/yfV0HSnJUmS4W6\nGjrgW76yAxlyvZsJcNJrx1tKLo6ut1U7XNDnOkdbmXcAPZA10jsnw/GRkLFoTgaY\nf6BkRuyqkVV0j3C2f4Hrd/35aNhbahKbVcvE7eOOZhYdgEIwqZos3g5TAoGAGJor\nOQRwxnN+4gHKX1vGoNBFQQ3Vj+XMZR+hZqpcFmK8qXXGoUI5ByOV8KddsnDYqXj9\n4XPkhB2Zd/qn3XLETo6E7pfCpc2BfXL5alTbgU2oPi4xl+6heTdE36ymKc6KB5Ll\n6qKEGwutJ0iA9L7gKGzvSkYHyyzEhHYkpN2BYRECgYAMdh47+dlDez5vdn5s+8K/\nrk4D/IQyke8DO2iCzjrEvvOCeSmYbqtLMb7ZqX4lY6yEXjD7MPKUsWvSt9Qk4jyP\nJd9kWLup5PJpPi0EqL9/u2bBvI9b8YeAvBMz8gct1IkPpI4itt2bAp3HLjqY4Qsr\ncngdNyXTbk3Q7iant6myMg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "santhosh-46@logical-voyage-252303.iam.gserviceaccount.com",
+  "client_id": "116522593260366570590",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/santhosh-46%40logical-voyage-252303.iam.gserviceaccount.com"
+}
