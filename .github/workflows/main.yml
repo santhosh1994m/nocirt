@@ -14,7 +14,7 @@ jobs:
     - name : install terraform 
       run: |
           curl -f "https://releases.hashicorp.com/terraform/0.12.12/terraform_0.12.12_linux_amd64.zip" -o "terraform_0.12.12_linux_amd64.zip"
-          sudo unzip terraform_0.12.12_linux_amd64.zip -d /usr/local/bin/ -y
+          sudo unzip terraform_0.12.12_linux_amd64.zip -d /usr/local/bin/ yes
           sudo chmod +x  /usr/local/bin/terraform
           terraform -version
     - name: Terraform init	
