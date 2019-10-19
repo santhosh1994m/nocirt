@@ -1,6 +1,6 @@
 provider "google" {
-   credentials : ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
-   project     : ${{secrets.GCLOUD_PROJECT_ID}}
+   credentials = ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
+   project     = ${{secrets.GCLOUD_PROJECT_ID}}
    region      = "us-west1"
    version     = "~> 3.0.0"
 
