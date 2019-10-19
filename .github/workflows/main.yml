@@ -1,20 +1,22 @@
-name: CI	
+name: CI
 
-on: 	
-  push:	
-    branches:	
+on:
+  push:
+    branches:
       - master
 
-jobs:	
-  tf_fmt:	
+jobs:
+  tf_fmt:
     name: Validate	
     runs-on: ubuntu-latest	
-    steps:	
+    steps:
     - uses: actions/checkout@v1
-      run: |
+    - name : install terraform 
+      run: 
           curl -f "https://releases.hashicorp.com/terraform/v0.12.3/terraform_v0.12.3_linux_amd64.zip" -o "terraform_v0.12.3_linux_amd64.zip"
           sudo unzip terraform_v0.12.3_linux_amd64.zip -d /usr/local/bin/
           sudo chmod +x  /usr/local/bin/terraform
+          terraform -version
     - name: Terraform init	
       uses: hashicorp/terraform-github-actions/init@v0.4.5	
       env:
