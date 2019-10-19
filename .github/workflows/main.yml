@@ -21,17 +21,24 @@ jobs:
       uses: hashicorp/terraform-github-actions/init@v0.4.5	
       env:
        TF_ACTION_WORKING_DIR: "./src"  
+       PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
+       APPLICATION_CREDENTIALS: ${{GOOGLE_APPLICATION_CREDENTIALS}} 
     - name: Terraform validate	
       uses: hashicorp/terraform-github-actions/validate@v0.4.5	
       env:
-       TF_ACTION_WORKING_DIR: "./src"
+        TF_ACTION_WORKING_DIR: "./src"
+        PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
+        APPLICATION_CREDENTIALS: ${{GOOGLE_APPLICATION_CREDENTIALS}} 
     - name: Terraform plan 
       uses: hashicorp/terraform-github-actions/plan@v0.4.5 
       env:
        TF_ACTION_WORKING_DIR: "./src"	
+       PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
+       APPLICATION_CREDENTIALS: ${{GOOGLE_APPLICATION_CREDENTIALS}} 
     - name: Terraform apply 	
       uses: hashicorp/terraform-github-actions/apply@v0.4.5 
       env:
        TF_ACTION_WORKING_DIR: "./src"	
-       
+       PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
+       APPLICATION_CREDENTIALS: ${{GOOGLE_APPLICATION_CREDENTIALS}} 
       
