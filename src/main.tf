@@ -1,8 +1,7 @@
 provider "google" {
-    credentials = "logical-voyage-252303-6ab62b7de59c.json"
-    project     = "logical-voyage-252303"
+   project     = "${{GCLOUD_PROJECT_ID}}"
     region      = "us-west1"
-}
+    version = "~> 3.0.0"
 
 resource "google_storage_bucket" "image-store" {
   name     = "image-store-bucket-santhosh"
